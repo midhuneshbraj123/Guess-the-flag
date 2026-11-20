@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Flags Explorer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>✨ World Flags Explorer ✨</h1>
+            <p>Explore flags, capitals, and regions of countries around the globe!</p>
+            
+            <!-- Search & Filter Controls -->
+            <div class="controls">
+                <input type="text" id="searchInput" placeholder="🔍 Search for a country...">
+                <select id="regionFilter">
+                    <option value="all">🌐 All Regions</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">Americas</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container">
+        <div id="loading" class="loading">Loading amazing flags... 🚀</div>
+        <div id="countriesContainer"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Built with HTML, CSS, and JavaScript. Data provided by REST Countries API.</p>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
